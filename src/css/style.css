@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    background-color:hsl(257, 40%, 49%);    
+}
+
+.container{
+    background: url('../images/bg-desktop.svg');
+    height: 100vh;
+    width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid: 
+    "logo . " 1fr
+    "ilustration conteudo" 1fr
+    "ilustration conteudo" 1fr
+    "ilustration social" 1fr /
+    1fr 1fr ;
+}
+
+.logo{
+    grid-area: logo;
+    display: flex;
+    margin-top: 20px;
+    height: 35%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+
+.ilustration{
+    grid-area: ilustration;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ilustration img{
+    width: 95%;
+}
+
+
+.conteudo{
+    grid-area: conteudo;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.conteudo h1{
+    margin-top: 54px;
+    font-size: 46px;
+    color: #fff;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+
+.conteudo p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'open sans';
+    font-weight: 400;
+    text-align: justify;
+    color: #fff;
+    
+}
+
+.conteudo .btn{
+    width: 200px;
+    height: 55px;
+    background-color: hsl(300, 69%, 71%);
+    margin-top: 25px;
+    align-self: flex-start;
+    border-radius: 25px;
+    transition: 0.3s  ;
+}
+
+.conteudo button a{
+    color: #fff;
+}
+
+.conteudo button:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social{
+    grid-area: social;
+    display: flex;
+    margin:30px 80px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.social i{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:17px;
+    padding: 10px;
+    color: #fff;
+    margin: 10px;
+    border: 2px solid #fff ;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.social i:hover{
+    transform: scale(1.2);
+}
+
+
+
